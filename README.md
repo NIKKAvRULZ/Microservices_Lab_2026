@@ -47,24 +47,26 @@ From the root directory (where `docker-compose.yml` is located), run the followi
 docker-compose up --build
 ```
 
-## 🧪 API Testing (via Gateway - Port 8080)
+## 🧪 API Testing & Evidence (via Gateway - Port 8080)
 All services are accessible through the centralized API Gateway.
 
-### Item Service
+### 1. Item Service
 * **GET** `http://localhost:8080/items` - Retrieve all items.
+> **Evidence:** ![Item GET Screenshot](./evidence/item-get.png)
 * **POST** `http://localhost:8080/items` - Add a new item (Bonus Requirement).
+> **Evidence:** ![Item POST Screenshot](./evidence/item-post.png)
 
-### Order Service
+### 2. Order Service
 * **GET** `http://localhost:8080/orders` - View all orders.
+> **Evidence:** ![Order GET Screenshot](./evidence/order-get.png)
 * **POST** `http://localhost:8080/orders` - Place a new order (Bonus Requirement).
+> **Evidence:** ![Order POST Screenshot](./evidence/order-post.png)
 
-### Payment Service
+### 3. Payment Service
 * **POST** `http://localhost:8080/payments/process` - Process a payment (Bonus Requirement).
+> **Evidence:** ![Payment POST Screenshot](./evidence/payment-post.png)
 * **GET** `http://localhost:8080/payments/1` - Check payment status.
-
-> **Evidence:**
-> ![Postman Screenshot](./postman-output.png)
-> *(Note: Ensure your screenshot is named postman-output.png in the root folder)*
+> **Evidence:** ![Payment GET Screenshot](./evidence/payment-get.png)
 
 ---
 
